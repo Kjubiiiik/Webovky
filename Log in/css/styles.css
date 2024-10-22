@@ -1,0 +1,84 @@
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.padding {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.log_in {
+    color: aliceblue;
+
+    padding: 1rem;
+
+    border: 0.25rem rgba(0, 0, 0, 0.553) solid;
+    border-radius: 0.75rem;
+
+    background-color: rgba(0, 0, 0, 0.472);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.form {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.button_login {
+
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    background-color: rgba(152, 68, 232, 0.363);
+    
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+}
+::placeholder {
+    color: aliceblue;
+}
+
+.button {
+    color: aliceblue;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 4vh;
+
+
+    background-color: rgba(152, 68, 232, 0.363);
+    
+    border: 0.15rem solid black;
+    border-radius: 2rem;
+}
