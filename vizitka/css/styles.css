@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(97, 31, 158);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 150vh;
+}
+
+.padding {
+    height: 100vh;
+}
+
+.card {
+    background-color: rgba(144, 59, 170, 0.438);
+
+    width: 40vw;
+    height: 40vh;
+    
+    border: 0.5rem solid black;
+    border-radius: 0.25rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.card_2 {
+    background-color: rgba(144, 59, 170, 0.438);
+
+    width: 40vw;
+    height: 40vh;
+
+    margin-left: 30vw;
+    
+    border: 0.5rem solid black;
+    border-radius: 0.25rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.img_and_name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 15vw;
+    height: 40vh;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-left: 3vw;
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
+
+    border: 0.5rem solid;
+    border-color: black;
+    border-radius: 50%;
+}
+
+.name {
+    color: aliceblue;
+}
+.text {
+    color: aliceblue;
+    
+    width: 25vw;
+    height: 40vh;
+
+    border-left: 0.5rem solid black;
+    
+
+}
+
+h1 {
+    margin: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.card:hover {
+    display: none;
+    transition: 500ms;
+}
