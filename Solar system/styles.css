@@ -1,0 +1,105 @@
+body {    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    position: relative;
+}
+
+.slunce {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.608);
+    background-color: yellow;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+}
+
+.merkur {
+    background-color: grey;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+
+    margin: 125px;
+
+}
+
+.rotace_merkur {
+
+
+    width: 10px;
+    height: 10px;
+
+    animation-name: rotace ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+
+    position: absolute;
+}
+
+.venuse {
+    background-color: orangered;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+
+    margin: 175px;
+}
+
+.rotace_venuse {
+    animation-name: rotace ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+}
+
+.zeme {
+    background-color: rgb(46, 129, 13);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+
+    margin: 220px;
+}
+
+.rotace_zeme {
+    animation-name: rotace ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+
+    position: absolute;
+}
+
+
+@keyframes rotace {
+    100% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg)
+    }
+}
