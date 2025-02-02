@@ -1,6 +1,4 @@
-Simulace solárního systému.
-Obsahuje Slunce, okolo kterého obíhají další planety. (Merkur, Venuše, Země)
-Kolem Země obíhá měsíc, probíhá zatmění.
-Také obsahuje 4 hvězdy.
+Simulace zobrazuje Slunce, okolo kterého obíhají různé planety např. Merkur, Venuše, Země, a též 4 hvězdy.
+Je zde také vidět situace, kdy je Měsíc zastíněn Zemí, a tak dochází k zatmění Měsíce.
 ![první screenshot](image.png)
 ![druhý screenshot](image-1.png)
