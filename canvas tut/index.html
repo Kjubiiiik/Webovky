@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>2D Canvas</title>
+    <style>
+      body {
+        background: rgb(255, 0, 0);
+      }
+      canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <script>
+      // Získání referenci na canvas
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Smyčka pro přidávání bodů
+      var y = 0; // výška prvního bodu
+      var x = 0;
+      let p = 64;
+      let intervalId = setInterval(() => {
+        ctx.beginPath()
+        ctx.rect(x, y, 90, 90)
+        if (((x/100) + (y/100)) % 2) {
+            ctx.fillStyle = "#fff";
+        } else {
+            ctx.fillStyle = "#000";
+        }
+        ctx.fill()
+
+        x += 100;
+        p -= 1
+
+        if (x == 800) {
+            x = 0;
+            y += 100;
+        }
+
+        if (p = 0) {
+          // pokud jsme dole, zastavíme smyčku
+          clearInterval(intervalId);
+        }
+
+      }, 500); // 1 sekunda
+    </script>
+  </body>
+</html>

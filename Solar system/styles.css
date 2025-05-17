@@ -1,0 +1,335 @@
+body {    
+    background-color: black;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    position: relative;
+}
+
+.slunce {
+    display: flex;
+    justify-content: center;
+
+    animation: glow 1s infinite alternate;    
+
+    background-color: yellow;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+}
+.slunce1 {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.598);
+    background-color: yellow;
+    border-radius: 50%;
+    height: 35px;
+    width: 30px;
+
+    position: absolute;
+
+    animation-name: pulsovani_slunce1;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+.slunce2 {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.598);
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+
+    position: absolute;
+
+    animation-name: pulsovani_slunce2 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto; 
+}
+
+.slunce3 {
+    display: flex;
+    justify-content: center;
+
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+}
+
+.merkur {
+    background-color: grey;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+
+    transform: rotate(45deg);
+
+    margin: 95px;
+
+    background-image: linear-gradient(to left, black, grey);
+    border-radius: 50%;
+}
+
+.rotace_merkur {
+
+
+    width: 10px;
+    height: 10px;
+
+    animation-name: rotace ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+
+    position: absolute;
+
+    
+}
+
+.venuse {
+    background-color: orangered;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+
+    margin: 120px;
+
+    transform: rotate(45deg);
+    background-image: linear-gradient(to left, black, orangered);
+
+    border-radius: 75%;
+}
+
+.rotace_venuse {
+    display: flex;
+    animation-name: rotace ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+}
+
+.zeme {
+justify-self: center;
+
+    background-color: rgb(46, 129, 13); 
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+    position: absolute;
+
+    margin: 220px;
+
+    display: flex;
+
+    transform: rotate(45deg);
+    
+    background-image: linear-gradient(to left, black, blue);
+}
+
+.rotace_zeme {
+    display: flex;
+    animation-name: rotace ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;  
+    position: absolute;
+}
+
+.zatmeni {
+    width: 25px;
+    height: 25px;
+}
+
+.zeme1 {
+    justify-self: center;
+    height: 35px;
+    width: 35px;
+    left: 18px;
+    top: 15px;
+
+    position: absolute;
+
+    margin: 235px;
+
+    display: flex;
+
+    transform: rotate(45deg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), black);
+}
+
+.rotace_zeme1 {
+    display: flex;
+    animation-name: rotace ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    margin: auto;  
+    position: absolute;
+}
+
+.mesic {
+    background-color: rgb(83, 83, 83)  ;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+
+    margin: 25px;
+    
+    position: absolute;
+
+    transform: rotate(45deg);
+    background-image: linear-gradient(to left, black, grey);
+
+    animation-name: rotace_stinu_mesice;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+}
+
+.rotace_mesice {
+    
+    display: flex;
+    animation-name: rotace;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    margin: auto;  
+
+}
+
+.rotace_stinu_mesice {
+    animation-name: rotace_stinu_mesice;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;
+}
+
+.hvezda1 {
+    top: 800px;
+    left: 357px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.174);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 2.5px;
+    width: 2.5px;
+    position: absolute;
+}
+
+.hvezda2 {
+    left: 1135px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.174);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 2.5px;
+    width: 2.5px;
+    position: absolute;
+}
+
+.hvezda3 {
+    top: 750px;
+    left: 1500px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.174);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 2.5px;
+    width: 2.5px;
+    position: absolute;
+}
+
+.hvezda4 {
+    top: 250px;
+    left: 500px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.174);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 2.5px;
+    width: 2.5px;
+    position: absolute;
+}
+
+
+@keyframes rotace {
+    100% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotace_stinu_mesice {
+    100% {
+        transform: rotate(-0deg);
+    }
+    0% {
+        transform: rotate(-360deg)
+    }
+
+    
+}
+
+@keyframes pulsovani_slunce1 {
+    100% {
+        left: 950px;
+    }
+    50% {
+        left: 960px;
+    }
+    0% {
+        left: 950px;
+    }
+}
+
+@keyframes pulsovani_slunce2 {
+    100% {
+        left: 940px;
+    }
+    50% {
+        left: 928px;
+    }
+    0% {
+        left: 940px;
+    }
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0px 0px 20px 5px rgba(255, 255, 0, 0.598);
+    }
+    to {
+      box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.598);
+    }
+  }
+  

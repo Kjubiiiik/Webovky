@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    height: 150vh;
+}
+
+.container {
+    display: flex;
+    flex: content;
+    justify-content: center;
+    margin: 75px;
+}
+
+.first_section {
+    width: 30vw;
+    height: 17.5vh;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(124, 124, 124));
+    padding-top: 75px;
+    overflow: hidden;
+}
+
+h1 {
+    background-color: rgb(97, 100, 100);
+    margin: 0;
+    width: 25vw;
+    justify-self: center;
+}
+
+.first_section > p {
+    margin: 0;
+    width: 25vw;
+    background-color: rgb(21, 121, 21);
+    justify-self: center;
+}

@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: black;
+    height: 150px;
+    width: 100%;
+
+}
+
+.logo {
+    margin: 10px;
+
+    width: 175px;
+    height: 125px;
+}
+
+.boddy {
+    background-color: aqua;
+
+    height: 600px;
+    width: 100%;
+}
+
+.tail {
+    background-color: black;
+
+    height: 150px;
+    width: 100%;
+}

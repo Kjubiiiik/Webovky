@@ -1,0 +1,35 @@
+body {
+    display: flex;
+
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p, h1 {
+    color:white;
+    justify-self: center;
+}
+
+.logo {
+    color:red;
+    justify-self: center;
+}
+
+.menu {
+    color:red;
+    justify-self: center;
+}
+
+svg {
+    width: 50px;
+    fill:red;
+}
+
+.content {
+    height: 75px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}

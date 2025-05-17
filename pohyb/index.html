@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pohyb</title>
+    <link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="first_section">
+            <h1 id="11">Lorem Ipsum</h1>
+            <p id="12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente deleniti laborum. Iste nemo obcaecati rem culpa, saepe numquam labore?</p>
+        </section>
+    </div>
+    <script>
+        window.addEventListener("scroll", () => {
+            const h1 = document.getElementById("11");
+            const p = document.getElementById("12");
+            let r = window.scrollY;
+            if (r < 0) { 
+                r = 0
+            };
+            if (r > 255) { 
+                r = 255
+            };
+            h1.style.backgroundColor = `rgb(${r}, 100, 100)`
+            h1.style.transform = `translateY(${window.scrollY / 16}px)`;
+            p.style.transform = `translateY(${window.scrollY / 32}px)`;
+        })
+    </script>
+</body>
+</html>

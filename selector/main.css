@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+.parent-1 > *{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.parent-1 > *:nth-child(odd) {
+    background-color: green;
+}
+
+.parent-1 > *:first-child + .child {
+    background-color: blue;
+}
+
+.parent-1, .parent-2 {
+    width: 100%;
+    min-height: 500px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.parent-1 > *:first-child ~ .potomek, .parent-1 > *:first-child {
+    background-color: brown;
+}
+
+.potomek:hover {
+    background-color: white !important;
+}
+
+div:has(.potomek) {
+    background-color: blueviolet;
+}
+
+input:focus {
+    background-color: red;
+}
